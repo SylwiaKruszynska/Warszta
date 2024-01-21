@@ -35,3 +35,6 @@ print("Suma a i b to", sum)
 ```
 
 Fragment kodu zgagnieżdżony w tekście `print("Hello, World")`
+
+
+![Wakacje](images/Madera.jpg)
