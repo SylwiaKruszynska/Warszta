@@ -1,0 +1,18 @@
+#Początek pliku (#początek)
+### Nawigacja
+[Początek](#początek)
+[Tabelka](#tabelka)
+[Python](#python)
+[Stopka] (#koniec)
+Begining of the file (^1)
+### Tabelka (#tabelka)
+|Nagłówek 1|Nagłówek|2|Nagłówek 3|
+|Element 1|Element 2 |Element 3|
+|Element 4|Element 5 |Element 6|
+|Element 7|Element 8 |Element 9|
+### Python (#python)
+```py
+def hello world():
+  print("Hello, World!"
+  hello world
+```
