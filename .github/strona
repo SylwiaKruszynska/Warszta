@@ -1,43 +1,68 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<!DOCTYPE html>
+<html>
+<head>
+<title>Zadanie 4</title>
+<style>
+body {background-color: lightblue;}
+a	{color: blue; font-family: "Comic Sans Ms"}
+h1   {color: green; font-family: "Comic Sans Ms"}
+h2	{color: green; font-family: "Comic Sans Ms"}
+h3	{color: green; font-family: "Comic Sans Ms"}
+p    {color: blue; font-family: "Comic Sans Ms"}
+table, td, th	{color: magenta; font-family: "Comic Sans Ms"; border: 1px solid}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+</head>
+<body>
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["master"]
+<h1>Nagłówek 1</h1>
+<p>Paragraf</p>
+<h2>Nagłówek 2</h2>
+<p>Paragraf
+<br>Nowa linia
+<br>Nowa linia
+</p>
+<h3>Linki</h3>
+<a href="http://www.root-servers.com">Link 1</a>
+<br><a href="https://www.root-servers.org">Link 2</a>
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+<br>
+<h2>Tabela</h2>
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+<table>
+	<tr>
+		<th>Kolumna 1</th>
+		<th>Kolumna 2</th>
+		<th>Kolumna 3</th>
+	</tr>
+	<tr>
+		<td>tekst</td>
+		<td>tekst</td>
+		<td>tekst</td>
+	</tr>
+	<tr>
+		<td>tekst</td>
+		<td>tekst</td>
+		<td>tekst</td>
+	</tr>
+	<tr>
+		<td>tekst</td>
+		<td>tekst</td>
+		<td>tekst</td>
+	</tr>
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+</table>
+<br>
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+ <img src="Madera.gif" alt="Madera"> 
+		
+
+
+
+</body>
+</html>
